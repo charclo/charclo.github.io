@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Gentle Ultimate - De grootste ultimate frisbeeclub van België</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="animate.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.js"></script>
+</head>
+    
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+<div id="header"></div>
+<script>
+$("#header").load("header.html");
+</script>
+    
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="fotos/buoc1%20(40%20van%2076).jpg" alt="New York" height="700">
+        <div class="carousel-caption">
+          <h1>Gentle Ultimate</h1>
+          <p>Frisbee club</p>
+        </div>      
+      </div>
+
+      <div class="item">
+        <img src="fotos/buoc1%20(42%20van%2076)%20kopie.jpg" alt="Chicago"  height="700">
+        <div class="carousel-caption">
+          <h1>Gentle Ultimate</h1>
+          <p>Frisbee club</p>
+        </div>      
+      </div>
+    
+      <div class="item">
+        <img src="fotos/WEBSITE3.jpg" alt="Los Angeles"  height="700">
+        <div class="carousel-caption">
+          <h1>Gentle Ultimate</h1>
+          <p>Frisbee club</p>
+        </div>      
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<!-- Container -->
+<div class="row text-center feature-box">
+  <div class="col-sm-4">
+      <div id="leden" class="feature">
+          <h1>329</h1>
+          <p>LEDEN</p>
+      </div>
+  </div>
+  <div class="col-sm-4">
+      <div id="teams" class="feature">
+          <h1>9</h1>
+          <p>TEAMS</p>
+      </div>
+  </div>
+  <div class="col-sm-4">
+      <div id="overwinningen" class="feature">
+          <h1>19</h1>
+          <p>NATIONALE OVERWINNINGEN</p>
+      </div>
+  </div>
+</div>
+
+<script>
+  jQuery(document).ready(function(){
+      var waypoint = new Waypoint({
+        element: document.getElementById('teams'),
+        handler: function() {
+          jQuery('#teams').addClass("animated fadeInUp");
+        }
+      ,offset: '85%'
+      });
+      var waypoint = new Waypoint({
+        element: document.getElementById('leden'),
+        handler: function() {
+          jQuery('#leden').addClass("animated fadeInUp");
+        }
+        ,offset: '85%'
+      });
+      var waypoint = new Waypoint({
+        element: document.getElementById('overwinningen'),
+        handler: function() {
+          jQuery('#overwinningen').addClass("animated fadeInUp");
+        }
+        ,offset: '85%'
+      });
+    });
+</script>
+
+<div id="welkom" class="container">
+  <p>Gentle is de grootste ultimate frisbee vereniging in België. 
+  Sinds 2004 floreren we niet alleen op de Gentse Blaarmeersen maar zijn we uitgegroeid tot de Belgische en Europese top. 
+  Onze ambitie? Een elite open, vrouwen, coed en jeugdploeg als vaste waarden in de internationale competitie met o.a. 
+  deelnames aan de Europese en wereld-clubkampioenschappen. Wil je je ultimate frisbee ambities botvieren en lid 
+  worden van Gentle? Bekijk in <a href="https://www.gentleultimate.be/trainingen">welke trainingsgroep</a> jij je het beste zult voelen.</p>
+  <p>We spelen voornamelijk op de glooiende kunstgrasvelden in de Gentse Blaarmeersen maar we zijn onze queeste 
+  naar de disc aan het uitbreiden. Sommige van onze <a href="https://www.gentleultimate.be/jeugd/" target="_blank" rel="noopener noreferrer">jeugdploegen</a> 
+  trainen in Sint-Amandsberg, aan de Muide en in Wondelgem. In 2017 zijn we ook gestart met onze 
+  <a href="https://www.gentleultimate.be/city-league/" target="_blank" rel="noopener noreferrer">Ghent City League</a> en 
+  <a href="https://www.gentleultimate.be/brugse-poort-project/" target="_blank" rel="noopener noreferrer">Muide/Brugse Poort project</a>.</p>
+  <br>
+</div>
+    
+
+<div id="footer"></div>
+<script>
+$("#footer").load("footer.html");
+</script>
+
+
+</body>
+</html>

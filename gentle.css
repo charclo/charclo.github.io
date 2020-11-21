@@ -30,3 +30,13 @@ footer a:hover {
     -o-background-size: cover;
     background-size: cover;
   }
+body {
+    height: 100vh;
+}
+.container {
+    width: 970px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
