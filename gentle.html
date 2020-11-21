@@ -17,7 +17,7 @@
   </head>
 <body>
     
-    <nav class="navbar navbar-expand-sm fixed-top bg-dark navbar-dark nav-fill">
+    <nav class="navbar navbar-expand-lg fixed-top bg-dark navbar-dark nav-fill">
         <a class="navbar-brand" href="#">
             <img src="https://www.gentleultimate.be/wp-content/uploads/2017/09/LOGO.svg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
             Gentle Ultimate
@@ -152,11 +152,12 @@
               <br>
             </div>
     </div>
-    
+
+    <div id="footer"></div>
+    <script>
+      $("#footer").load("footer.html");
+    </script>
 </body>
 
-<script>
-  $("#footer").load("footer.html");
-</script>
 
 </html>
