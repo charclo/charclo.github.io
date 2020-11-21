@@ -6,12 +6,16 @@
     <meta charset="utf-8">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-  </head>
-<body>
+    <link rel="stylesheet" href="animate.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="gentle.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.js"></script>
+  </head>
+<body>
     
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark nav-fill">
         <a class="navbar-brand" href="#">
@@ -86,36 +90,80 @@
 
     <div class="container">
         <div class="row text-center feature-box">
-            <div class="col-sm-4 slide">
+            <div class="col-sm-4">
             <div id="leden" class="feature">
             <h1>329</h1>
             LEDEN
             
             </div>
             </div>
-            <div class="col-sm-4 slide">
+            <div class="col-sm-4">
             <div id="teams" class="feature">
             <h1>9</h1>
             TEAMS
             
             </div>
             </div>
-            <div class="col-sm-4 slide">
+            <div class="col-sm-4">
             <div id="overwinningen" class="feature">
             <h1>19</h1>
             NATIONALE OVERWINNINGEN
+
+            <script>
+              jQuery(document).ready(function(){
+                  var waypoint = new Waypoint({
+                    element: document.getElementById('teams'),
+                    handler: function() {
+                      jQuery('#teams').addClass("animated fadeInUp");
+                    }
+                  ,offset: '85%'
+                  });
+                  var waypoint = new Waypoint({
+                    element: document.getElementById('leden'),
+                    handler: function() {
+                      jQuery('#leden').addClass("animated fadeInUp");
+                    }
+                    ,offset: '85%'
+                  });
+                  var waypoint = new Waypoint({
+                    element: document.getElementById('overwinningen'),
+                    handler: function() {
+                      jQuery('#overwinningen').addClass("animated fadeInUp");
+                    }
+                    ,offset: '85%'
+                  });
+                });
+            </script>
             
             </div>
             </div>
             </div>
-            <div class="blok">
-            
-            Gentle is de grootste ultimate frisbee vereniging in België. Sinds 2004 floreren we niet alleen op de Gentse Blaarmeersen maar zijn we uitgegroeid tot de Belgische en Europese top. Onze ambitie? Een elite open, vrouwen, coed en jeugdploeg als vaste waarden in de internationale competitie met o.a. deelnames aan de Europese en wereld-clubkampioenschappen. Wil je je ultimate frisbee ambities botvieren en lid worden van Gentle? Bekijk in <a href="https://www.gentleultimate.be/trainingen">welke trainingsgroep</a> jij je het beste zult voelen.<br>
-            <br>
-            We spelen voornamelijk op de glooiende kunstgrasvelden in de Gentse Blaarmeersen maar we zijn onze queeste naar de disc aan het uitbreiden. Sommige van onze <a href="https://www.gentleultimate.be/jeugd/" target="_blank" rel="noopener noreferrer">jeugdploegen</a> trainen in Sint-Amandsberg, aan de Muide en in Wondelgem. In 2017 zijn we ook gestart met onze <a href="https://www.gentleultimate.be/city-league/" target="_blank" rel="noopener noreferrer">Ghent City League</a> en <a href="https://www.gentleultimate.be/brugse-poort-project/" target="_blank" rel="noopener noreferrer">Muide/Brugse Poort project</a>.
-            
+            <div id="welkom" class="container">
+              <p>Gentle is de grootste ultimate frisbee vereniging in België. 
+              Sinds 2004 floreren we niet alleen op de Gentse Blaarmeersen maar zijn we uitgegroeid tot de Belgische en Europese top. 
+              Onze ambitie? Een elite open, vrouwen, coed en jeugdploeg als vaste waarden in de internationale competitie met o.a. 
+              deelnames aan de Europese en wereld-clubkampioenschappen. Wil je je ultimate frisbee ambities botvieren en lid 
+              worden van Gentle? Bekijk in <a href="https://www.gentleultimate.be/trainingen">welke trainingsgroep</a> jij je het beste zult voelen.</p>
+              <p>We spelen voornamelijk op de glooiende kunstgrasvelden in de Gentse Blaarmeersen maar we zijn onze queeste 
+              naar de disc aan het uitbreiden. Sommige van onze <a href="https://www.gentleultimate.be/jeugd/" target="_blank" rel="noopener noreferrer">jeugdploegen</a> 
+              trainen in Sint-Amandsberg, aan de Muide en in Wondelgem. In 2017 zijn we ook gestart met onze 
+              <a href="https://www.gentleultimate.be/city-league/" target="_blank" rel="noopener noreferrer">Ghent City League</a> en 
+              <a href="https://www.gentleultimate.be/brugse-poort-project/" target="_blank" rel="noopener noreferrer">Muide/Brugse Poort project</a>.</p>
+              <br>
             </div>
     </div>
     
 </body>
+
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  <p>
+    © Gentle Ultimate
+    <span class="sep">|</span>
+    2017 - 2020
+  </p> 
+</footer>
+
 </html>
