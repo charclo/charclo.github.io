@@ -21,4 +21,12 @@ footer a {
 footer a:hover {
     color: #777;
     text-decoration: none;
-}  
+} 
+.carousel-item {
+    height: 100vh;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
