@@ -1,6 +1,6 @@
 <div class="container-fluid row" role="main">
 	<div class="main-menu" >
-		<nav id="site-navigation" class="navbar navbar-expand-lg navbar-fixed-top">     
+		<nav id="site-navigation" class="navbar navbar-default navbar-fixed-top">     
 			<div class="container">   
 				<div class="navbar-header">
 					<?php if ( has_nav_menu( 'main_menu' ) ) : ?>
@@ -48,12 +48,9 @@
 		</nav> 
 	</div>
 </div>
-					<?php if ( has_post_thumbnail() ) : ?>
-						<div class="single-thumbnail featured-thumbnail">
-							<img class="lazy" src="<?php echo get_template_directory_uri() . '/img/placeholder.png' ?>" data-src="<?php the_post_thumbnail_url( 'hometard-single' ); ?>" alt="<?php the_title_attribute(); ?>" />
-							<noscript>
-								<?php the_post_thumbnail( 'hometard-single' ); ?>
-							</noscript>
-						</div>
-					<?php endif; ?>
+<?php if ( has_post_thumbnail() ) : ?>
+	<div class="single-thumbnail featured-thumbnail">
+        <img class="lazy" style="opacity: 1;background-image: url(<?php the_post_thumbnail_url('large'); ?>); ?> ;height: 30vh;background-position: center;background-repeat: no-repeat;background-size: cover;"/>
+    </div>
+<?php endif; ?>
 <div class="container main-container" role="main">

@@ -25,7 +25,7 @@ if ( ! function_exists( 'hometard_setup' ) ) :
 
 		add_theme_support( 'post-thumbnails' );
 		set_post_thumbnail_size( 300, 300, true );
-		add_image_size( 'hometard-single', 1170, 460, true );
+		add_image_size( 'hometard-single', 1170, 250, true );
 
 		// Add Custom Background Support.
 		$args = array(

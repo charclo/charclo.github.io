@@ -726,7 +726,7 @@ p.site-description {
     height: 50px;
 }
 a.featured-thumbnail {
-    width: 100%;
+    width: 50%;
     float: left;
     text-align: center;
     border: 0;

@@ -108,13 +108,14 @@ padding: 5em 0em;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  transform: translate(0,-60px);
+/*   transform: translate(0,-60px); */
 }
 .hero-image-home {
   height: 100vh;
+  margin-bottom: 60px;
 }
 .hero-image-page {
-  height: 60vh;
+  height: 30vh;
 }
 .hero-text {
     text-align: center;
@@ -504,7 +505,7 @@ a:active {
 }
 @media (max-width: 1000px){
     .container {
-        width: 1000px;
+        width: 850px;
     }
 }
 @media (max-width: 767px) {
